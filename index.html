@@ -123,6 +123,128 @@
                 </div>
             </article>
 
+                <!-- El Barón Rojo Card -->
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/varon_rojo.png" alt="El Barón Rojo estilo retro" class="card-image" loading="lazy">
+                        <div class="card-badge price-badge">S/ 22.00</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Combo Mecha Supremo</h3>
+                        <p class="card-text">
+                            <strong>1/4 de Pollo</strong> + Arroz Chaufa + papas fritas. Un combate de sabores lleno de
+                            adrenalina y energía.
+                        </p>
+                        <div class="card-footer">
+                            <button class="buy-btn" onclick="addToCart(22)">
+                                🛒 Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Super Mario Bros Card -->
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/mario_bros.png" alt="Super Mario Bros estilo retro" class="card-image" loading="lazy">
+                        <div class="card-badge price-badge">S/ 16.00</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Combo Champiñón Estrella</h3>
+                        <p class="card-text">
+                            <strong>Hamburguesa Royal</strong> + papas fritas y cremas. ¡Mamma Mia! Perfecto para recargar
+                            vidas y saltar de alegría.
+                        </p>
+                        <div class="card-footer">
+                            <button class="buy-btn" onclick="addToCart(16)">
+                                🛒 Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Rugrats Card -->
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/rugrats.png" alt="Rugrats estilo retro" class="card-image" loading="lazy">
+                        <div class="card-badge price-badge">S/ 12.00</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Combo Aventura en Pañales</h3>
+                        <p class="card-text">
+                            <strong>Salchipollo Infantil</strong> + Jugo en caja. Una porción especial para los más pequeños
+                            del hogar. ¡Diversión garantizada!
+                        </p>
+                        <div class="card-footer">
+                            <button class="buy-btn" onclick="addToCart(12)">
+                                🛒 Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Los Picapiedra Card -->
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/picapiedras.png" alt="Los Picapiedra estilo retro" class="card-image" loading="lazy">
+                        <div class="card-badge price-badge">S/ 40.00</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Combo Troncomóvil Familiar</h3>
+                        <p class="card-text">
+                            <strong>1 Pollo Entero a la Brasa</strong> + porción familiar de papas + ensalada grande +
+                            Gaseosa 1.5L. ¡Yabba Dabba Doo!
+                        </p>
+                        <div class="card-footer">
+                            <button class="buy-btn" onclick="addToCart(40)">
+                                🛒 Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Gárgolas Card -->
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/gargolas.png" alt="Gárgolas estilo retro" class="card-image" loading="lazy">
+                        <div class="card-badge price-badge">S/ 18.00</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Combo Goliath de Piedra</h3>
+                        <p class="card-text">
+                            <strong>1/4 de Pollo a la Brasa</strong> (Parte Pecho) + papas + ensalada oscura (vinagreta
+                            especial). Para despertar con fuerza en la noche.
+                        </p>
+                        <div class="card-footer">
+                            <button class="buy-btn" onclick="addToCart(18)">
+                                🛒 Añadir al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <script>
+            let total = 0;
+            function addToCart(price) {
+                total += price;
+                document.getElementById('cart-total').textContent = 'S/ ' + total.toFixed(2);
+
+                // Add a brief animation to the cart total to show it updated
+                const cartSummary = document.querySelector('.cart-summary');
+                cartSummary.style.transform = 'scale(1.1)';
+                cartSummary.style.color = 'var(--primary-neon)';
+                setTimeout(() => {
+                    cartSummary.style.transform = 'scale(1)';
+                    cartSummary.style.color = 'var(--text-main)';
+                }, 300);
+            }
+        </script>
+
+        <footer class="footer">
+            <p>&copy; 2026 Retro Nostalgia. Recordando los mejores momentos.</p>
+        </footer>
 </body>
 
 </html>
