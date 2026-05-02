@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Gran Pollada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran🍗</title>
+    </title> Pollada Pro Fondos - Edición 90°</title>
+    <meta name="description"
+        content="Compra tus tarjetas para la Gran Pollada Bailable. Disfruta de los mejores combos con la temática de tus dibujos animados favoritos de los 90s.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <!-- CONTENIDO -->
+<body>
+    <div class="background-overlay"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="neon-text-container">
+                <h1 class="glitch" data-text="POLLADA">GRAN </h1>
+                <h2 class="subtitle">PRO FONDOS - EDICIÓN 90°</h2>
+            </div>
+            <p class="hero-description">
+                Apoya nuestra causa disfrutando de la mejor sazón. Elige tu combo temático favorito, compra tu tarjeta
+                en línea y asegura tu porción de nostalgia y sabor. ¡No te quedes sin la tuya!
+            </p>
+            <div class="hero-buttons">
+                <a href="#cartoons" class="cta-button pulse-anim">Ver Combos Disponibles</a>
+                <div class="cart-summary">
+                    <span class="cart-icon">🛒</span> <span id="cart-total">S/ 0.00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="cartoons" class="container">
+        <h2 class="section-title">Nuestras Tarjetas (Combos)</h2>
+
+        <div class="cards-grid">
+            <!-- Dragon Ball Card -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="img/dragon_ball.png" alt="Dragon Ball Z estilo retro" class="card-image" loading="lazy">
+                    <div class="card-badge price-badge">S/ 18.00</div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Combo Super Saiyajin</h3>
+                    <p class="card-text">
+                        <strong>1/4 de Pollo a la Brasa</strong> + abundante ración de papas fritas, ensalada fresca y
+                        cremas especiales. ¡Un sabor que supera los 9000 de poder!
+                    </p>
+                    <div class="card-footer">
+                        <button class="buy-btn" onclick="addToCart(18)">
+                            🛒 Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Pokémon Card -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="img/pokemon.png" alt="Pokémon estilo retro" class="card-image" loading="lazy">
+                    <div class="card-badge price-badge">S/ 20.00</div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Combo Maestro Pokémon</h3>
+                    <p class="card-text">
+                        <strong>1/4 de Pollo</strong> + papas fritas, ensalada, cremas y <strong>1 Gaseosa
+                            (500ml)</strong>. ¡Atrápalos ya y disfruta de este gran banquete!
+                    </p>
+                    <div class="card-footer">
+                        <button class="buy-btn" onclick="addToCart(20)">
+                            🛒 Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Saint Seiya Card -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="img/saint_seiya.png" alt="Caballeros del Zodiaco estilo retro" class="card-image"
+                        loading="lazy">
+                    <div class="card-badge price-badge">S/ 25.00</div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Combo Cosmos Dorado</h3>
+                    <p class="card-text">
+                        <strong>1/2 Pollo a la Brasa</strong> + papas fritas y ensalada familiar. Despierta el séptimo
+                        sentido con esta gran porción para compartir.
+                    </p>
+                    <div class="card-footer">
+                        <button class="buy-btn" onclick="addToCart(25)">
+                            🛒 Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Thundercats Card -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="img/thundercats.png" alt="Thundercats estilo retro" class="card-image" loading="lazy">
+                    <div class="card-badge price-badge">S/ 15.00</div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Combo Espada del Augurio</h3>
+                    <p class="card-text">
+                        <strong>Salchipapa Clásica</strong> + ensalada y cremas. Permite ver más allá de lo evidente y
+                        quita el hambre al instante.
+                    </p>
+                    <div class="card-footer">
+                        <button class="buy-btn" onclick="addToCart(15)">
+                            🛒 Añadir al Carrito
+                        </button>
+                    </div>
+                </div>
+            </article>
 
 </body>
+
 </html>
