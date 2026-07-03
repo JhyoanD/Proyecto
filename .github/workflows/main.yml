@@ -16,6 +16,19 @@ jobs:
       - name: Descargar el repositorio
         uses: actions/checkout@v4
 
+      - name: Mostrar información del entorno
+        run: |
+          echo "=== Información del entorno ==="
+
+          echo "Sistema operativo:"
+          uname -a
+
+          echo "Directorio de trabajo:"
+          pwd
+
+          echo "Contenido del proyecto:"
+          ls -la
+
       - name: Validar estructura del proyecto
         run: |
           echo "Iniciando validación del proyecto..."
