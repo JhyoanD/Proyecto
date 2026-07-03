@@ -1,0 +1,35 @@
+name: Integración Continua
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  validar-proyecto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Validar estructura del proyecto
+        run: |
+          echo "Iniciando validación del proyecto..."
+
+          test -f index.html
+          echo "✓ index.html encontrado"
+
+          test -f styles.css
+          echo "✓ styles.css encontrado"
+
+          test -d img
+          echo "✓ Carpeta img encontrada"
+
+          echo "La estructura principal del proyecto es correcta."
+
+      - name: Finalizar Integración Continua
+        run: echo "Proceso de Integración Continua finalizado correctamente."
